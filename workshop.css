@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #f2ece4;
+    width: 0.4rem;
+    /* background-color: rgb(172, 36, 36); */
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(172, 36, 36);
+}
+
+html {
+    font-family: 'Sora', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.navbar {
+    width: 100vw;
+    height: 3rem;
+    background-color: #f2ece4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 1rem;
+}
+
+.logo .logo-gomycode {
+    z-index: 10000;
+    width: 10rem;
+    height: 10rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5rem;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.list-item a {
+    font-size: 1.2rem;
+    color: black;
+    cursor: pointer;
+}
+
+.list-item a:hover {
+    color: rgb(233, 28, 28);
+}
+
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ededed;
+    margin-top: -1rem;
+    padding-bottom: 3rem;
+    margin-bottom: -3rem;
+}
+
+.content-about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-content:nth-child(2) {
+    flex-direction: row;
+}
+
+.title-about {
+    color: rgb(233, 28, 28);
+    margin: 2rem 0 2rem 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.image-about {
+    width: 40rem;
+    height: 25rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem solid rgb(233, 28, 28);
+
+}
+
+.text-about {
+    font-size: 2rem;
+    background-color: rgb(172, 36, 36);
+    padding: 0.7rem;
+    color: #ededed;
+    border-radius: 0.2rem;
+}
+
+#courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fdf9f9;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    padding: 5rem;
+}
+
+.title-courses {
+    color: rgb(233, 28, 28);
+    margin: 2rem 0 2rem 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    width: 31%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.2rem;
+}
+
+.text-card {
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: rgb(172, 36, 36);
+    padding: 0.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+
+#contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f1ed;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.title-contact {
+    color: rgb(233, 28, 28);
+    margin: 2rem 0 2rem 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.form {
+    width: 60vw;
+    height: 35vh;
+    background-color: rgb(125, 21, 21);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 0.7rem;
+}
+
+.input-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+input:focus {
+    border: none;
+}
+
+.input-content {
+    width: 25vw;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    border: 0.1rem solid #ffffff;
+}
+
+.label-text {
+    color: #f4f1ed;
+}
+
+.input-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.message-form {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.submit-btn {
+    width: 10rem;
+    height: 3rem;
+    color: rgb(18, 13, 13);
+    font-size: 1.3rem;
+    padding: 0.7rem;
+    background-color: #f2ece4;
+    border: none;
+    font-family: 'Sora', sans-serif;
+    border-radius: 0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #f4f1ed;
+    width: 100%;
+    height: 50vh;
+}
+
+input:placeholder-shown {
+    font-family: 'Sora', sans-serif;
+    opacity: 0.85;
+}
+
+.container {
+    background-color: black;
+    width: 90%;
+    height: 85%;
+    border-radius: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo-footer {
+    width: 15rem;
+    height: 1.8rem;
+    padding: 1rem;
+}
+
+.text-footer-image {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.list-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.middleSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    padding: 1rem;
+    z-index: 100;
+    border-radius: 0.5rem;
+}
+
+.logo-item {
+    width: 3rem;
+    height: 3rem;
+    /* border: 1rem solid white; */
+}
+
+.list-footer a {
+    padding: 2rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.paragraph-footer {
+    font-size: 1rem;
+    color: #f2ece4;
+    text-align: center;
+    position: relative;
+    top: -2rem;
+    z-index: 100;
+}
