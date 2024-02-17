@@ -6,7 +6,8 @@
 }
 
 ::-webkit-scrollbar {
-    background-color: #f2ece4;
+    background-color: #f2ece4
+    ;
     width: 0.4rem;
     /* background-color: rgb(172, 36, 36); */
 }
